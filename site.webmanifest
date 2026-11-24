@@ -1,0 +1,16 @@
+{
+  "name": "L'MSMEEN — Moroccan Msemen Street Food",
+  "short_name": "L'MSMEEN",
+  "description": "Le msemen marocain, autrement.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#fbf5e9",
+  "theme_color": "#30251d",
+  "icons": [
+    {
+      "src": "assets/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

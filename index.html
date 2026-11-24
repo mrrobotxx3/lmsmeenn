@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#30251d">
+  <meta name="description" content="L'MSMEEN — food truck marocain spécialisé dans le msemen. Découvrez notre menu, nos emplacements et la précommande." />
+  <title>L'MSMEEN — Moroccan Street Food</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="announcement-bar">
+    <div class="container announcement-inner">
+      <span class="announcement-dot"></span>
+      <span data-i18n="announcement">Le msemen marocain, autrement.</span>
+      <span class="announcement-right" data-i18n="demoTag">DÉMO DU PROJET · HORAIRES FICTIFS</span>
+    </div>
+  </div>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="L'MSMEEN home">
+        <span class="brand-mark">M</span>
+        <span class="brand-copy"><strong>L'MSMEEN</strong><small>MOROCCAN STREET FOOD</small></span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#menu" data-i18n="navMenu">Menu</a>
+        <a href="#schedule" data-i18n="navTruck">Où est le truck ?</a>
+        <a href="#story" data-i18n="navStory">Notre histoire</a>
+        <a href="#contact" data-i18n="navContact">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button class="language-switch" id="languageSwitch" type="button" aria-label="Change language">AR</button>
+        <button class="cart-button" id="openCart" type="button" aria-label="Open cart">
+          <span class="cart-icon">⌑</span><span data-i18n="cart">Panier</span><b id="cartCount">0</b>
+        </button>
+        <button class="mobile-menu-button" id="mobileMenuButton" aria-label="Open menu" type="button">☰</button>
+      </div>
+    </div>
+    <div class="mobile-nav" id="mobileNav">
+      <a href="#menu" data-i18n="navMenu">Menu</a>
+      <a href="#schedule" data-i18n="navTruck">Où est le truck ?</a>
+      <a href="#story" data-i18n="navStory">Notre histoire</a>
+      <a href="#contact" data-i18n="navContact">Contact</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-section">
+      <div class="hero-grain"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="eyebrow-line"></span><span data-i18n="heroEyebrow">UNE TRADITION MAROCAINE, RÉINVENTÉE</span></div>
+          <h1 data-i18n="heroTitle">Le msemen<br><em>qui vient à vous.</em></h1>
+          <p class="hero-description" data-i18n="heroText">Du msemen tout chaud, des recettes généreuses et une pause qui a meilleur goût. Retrouvez notre food truck et composez votre envie.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#menu"><span data-i18n="discoverMenu">Découvrir le menu</span><span aria-hidden="true">↗</span></a>
+            <a class="button button-ghost" href="#schedule"><span data-i18n="findTruck">Trouver le truck</span><span aria-hidden="true">⌖</span></a>
+          </div>
+          <div class="hero-proof-row">
+            <div class="proof-item"><span class="proof-icon">✦</span><span data-i18n="proof1">Recettes marocaines</span></div>
+            <div class="proof-item"><span class="proof-icon">◷</span><span data-i18n="proof2">Commande à l'avance</span></div>
+            <div class="proof-item"><span class="proof-icon">♡</span><span data-i18n="proof3">Fait avec passion</span></div>
+          </div>
+        </div>
+        <div class="hero-art-wrap">
+          <div class="hero-sticker sticker-top"><span>100%</span><small>MAROCAIN</small></div>
+          <div class="hero-sticker sticker-bottom"><span>CHAUD</span><span>·</span><span>FRAIS</span><span>·</span><span>GÉNÉREUX</span></div>
+          <div class="hero-art-glow"></div>
+          <img class="hero-truck" src="assets/truck.svg" alt="Illustration du food truck L'MSMEEN">
+          <div class="hero-ground"></div>
+          <div class="hero-note"><span class="note-star">✳</span><span data-i18n="heroNote">Une pause. Un msemen. Un plaisir.</span></div>
+        </div>
+      </div>
+      <div class="hero-bottom-wave" aria-hidden="true"></div>
+    </section>
+
+    <section class="quick-strip" aria-label="Highlights">
+      <div class="container quick-strip-inner">
+        <div><span class="quick-number">01</span><span data-i18n="quick1">Choisissez votre recette</span></div>
+        <span class="quick-cross">✳</span>
+        <div><span class="quick-number">02</span><span data-i18n="quick2">Précommandez facilement</span></div>
+        <span class="quick-cross">✳</span>
+        <div><span class="quick-number">03</span><span data-i18n="quick3">Récupérez pendant la pause</span></div>
+      </div>
+    </section>
+
+    <section class="section menu-section" id="menu">
+      <div class="container">
+        <div class="section-heading heading-with-side">
+          <div>
+            <div class="eyebrow"><span class="eyebrow-line"></span><span data-i18n="menuEyebrow">NOTRE CARTE</span></div>
+            <h2 data-i18n="menuTitle">Le bon goût du <em>msemen.</em></h2>
+            <p data-i18n="menuSubtitle">Du classique marocain aux créations salées et sucrées.</p>
+          </div>
+          <div class="demo-price-note"><span>✳</span><span data-i18n="demoPrices">Prix indicatifs de démonstration</span></div>
+        </div>
+        <div class="menu-toolbar">
+          <div class="menu-filters" id="menuFilters">
+            <button class="filter-chip active" data-filter="all" data-i18n="filterAll">Tout</button>
+            <button class="filter-chip" data-filter="classic" data-i18n="filterClassic">Classiques</button>
+            <button class="filter-chip" data-filter="salty" data-i18n="filterSalty">Salés</button>
+            <button class="filter-chip" data-filter="sweet" data-i18n="filterSweet">Sucrés</button>
+            <button class="filter-chip" data-filter="formulas" data-i18n="filterFormula">Formules</button>
+          </div>
+          <label class="search-box"><span>⌕</span><input id="menuSearch" type="search" placeholder="Rechercher un msemen..." data-i18n-placeholder="searchPlaceholder"></label>
+        </div>
+        <div class="product-grid" id="productGrid" aria-live="polite"></div>
+        <div class="menu-footnote"><span>ⓘ</span><span data-i18n="menuFootnote">Carte et tarifs fictifs pour la maquette. Les recettes, allergènes et prix seront confirmés avant toute vente.</span></div>
+      </div>
+    </section>
+
+    <section class="creator-section" id="creator">
+      <div class="container creator-grid">
+        <div class="creator-visual">
+          <div class="creator-visual-label"><span class="creator-label-dot"></span><span data-i18n="creatorLabel">TON GOÛT, TES RÈGLES</span></div>
+          <img src="assets/msemen-creator.svg" alt="Msemen farci, illustration">
+          <div class="creator-round-stamp"><span data-i18n="creatorStamp1">CRÉE</span><b>✳</b><span data-i18n="creatorStamp2">LE TIEN</span></div>
+        </div>
+        <div class="creator-content">
+          <div class="eyebrow eyebrow-light"><span class="eyebrow-line"></span><span data-i18n="creatorEyebrow">L'ATELIER DU MSEMEN</span></div>
+          <h2 data-i18n="creatorTitle">Compose ton<br><em>msemen.</em></h2>
+          <p data-i18n="creatorText">Choisis ta base, ajoute ta garniture préférée et crée une recette à ton image.</p>
+          <div class="builder-group">
+            <label for="baseSelect" data-i18n="baseLabel">1. Choisis ta base</label>
+            <select id="baseSelect" class="builder-select">
+              <option value="classic" data-i18n="baseClassic">Msemen classique</option>
+              <option value="extra" data-i18n="baseExtra">Msemen extra</option>
+              <option value="mini" data-i18n="baseMini">Mini msemen (x3)</option>
+            </select>
+          </div>
+          <div class="builder-group">
+            <label data-i18n="fillingLabel">2. Choisis ta garniture</label>
+            <div class="filling-options" id="fillingOptions">
+              <button class="filling-option selected" data-filling="shawarma"><span>🍗</span><b data-i18n="fillShawarma">Poulet shawarma</b><small>+8 DH</small></button>
+              <button class="filling-option" data-filling="kefta"><span>🥩</span><b data-i18n="fillKefta">Kefta</b><small>+8 DH</small></button>
+              <button class="filling-option" data-filling="cheese"><span>🧀</span><b data-i18n="fillCheese">Fromage & légumes</b><small>+7 DH</small></button>
+              <button class="filling-option" data-filling="choco"><span>🍫</span><b data-i18n="fillChoco">Chocolat & banane</b><small>+6 DH</small></button>
+            </div>
+          </div>
+          <div class="builder-bottom">
+            <div><small data-i18n="estimatedPrice">PRIX ESTIMÉ</small><strong id="builderPrice">18 DH</strong></div>
+            <button class="button button-yellow" id="addCustomMsemen"><span data-i18n="addCreation">Ajouter ma création</span><span>＋</span></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section schedule-section" id="schedule">
+      <div class="container">
+        <div class="section-heading heading-with-side">
+          <div>
+            <div class="eyebrow"><span class="eyebrow-line"></span><span data-i18n="scheduleEyebrow">SUR LA ROUTE</span></div>
+            <h2 data-i18n="scheduleTitle">On se retrouve <em>où ?</em></h2>
+            <p data-i18n="scheduleSubtitle">Consultez les arrêts et les horaires prévus du food truck.</p>
+          </div>
+          <div class="schedule-status"><span class="status-dot"></span><span data-i18n="scheduleDemo">Planning de démonstration</span></div>
+        </div>
+        <div class="schedule-layout">
+          <div class="schedule-map-card">
+            <div class="map-topline"><span class="map-pin-icon">⌖</span><span data-i18n="mapPreview">APERÇU DES ARRÊTS</span><span class="map-demo-pill">DEMO</span></div>
+            <div class="stylized-map">
+              <div class="map-road road-one"></div><div class="map-road road-two"></div><div class="map-road road-three"></div>
+              <div class="map-block block-one"></div><div class="map-block block-two"></div><div class="map-block block-three"></div><div class="map-block block-four"></div>
+              <div class="map-park"><span>✿</span><small>ESPACE VERT</small></div>
+              <div class="map-pin map-pin-one"><span>01</span><i></i></div>
+              <div class="map-pin map-pin-two"><span>02</span><i></i></div>
+              <div class="map-pin map-pin-three"><span>03</span><i></i></div>
+              <div class="map-label map-label-one">CENTRE</div><div class="map-label map-label-two">CAMPUS</div>
+              <div class="map-truck-mini">🚚</div>
+            </div>
+            <div class="map-bottomline"><span data-i18n="mapLocation">Meknès · emplacements à confirmer</span><span>✳</span></div>
+          </div>
+          <div class="schedule-list-card">
+            <div class="schedule-list-head"><div><small data-i18n="weeklyPlan">PLANNING HEBDOMADAIRE</small><h3 data-i18n="weeklyStops">Nos prochains arrêts</h3></div><span class="calendar-icon">▦</span></div>
+            <div class="schedule-list" id="scheduleList"></div>
+            <p class="schedule-disclaimer" data-i18n="scheduleDisclaimer">Les lieux et horaires affichés sont fictifs. Le service n'est pas encore opérationnel.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="preorder-banner">
+      <div class="container preorder-inner">
+        <div><span class="preorder-kicker" data-i18n="preorderKicker">TA PAUSE, SANS FILE D'ATTENTE</span><h2 data-i18n="preorderTitle">Précommande. Récupère. Profite.</h2><p data-i18n="preorderText">Prépare ton panier à l'avance et choisis un créneau de retrait disponible.</p></div>
+        <a class="button button-dark" href="#menu"><span data-i18n="orderNow">Composer ma commande</span><span>↗</span></a>
+        <div class="preorder-spark">✳</div>
+      </div>
+    </section>
+
+    <section class="section story-section" id="story">
+      <div class="container story-grid">
+        <div class="story-image-wrap">
+          <img src="assets/msemen-fold.svg" alt="Illustration du msemen marocain traditionnel">
+          <div class="story-image-caption"><span data-i18n="storyCaption">UN SAVOIR-FAIRE MAROCAIN</span><b>✳</b></div>
+        </div>
+        <div class="story-copy">
+          <div class="eyebrow"><span class="eyebrow-line"></span><span data-i18n="storyEyebrow">NOTRE HISTOIRE</span></div>
+          <h2 data-i18n="storyTitle">Du patrimoine<br>dans <em>chaque pli.</em></h2>
+          <p data-i18n="storyText">Le msemen fait partie de nos habitudes, de nos petits-déjeuners et de nos pauses. L'MSMEEN reprend cette recette généreuse et lui donne un nouveau terrain de jeu : des garnitures créatives, un format street food et une expérience simple, pensée pour les journées qui bougent.</p>
+          <div class="story-values"><div><b>01</b><span data-i18n="value1">L'authenticité marocaine</span></div><div><b>02</b><span data-i18n="value2">La créativité des recettes</span></div><div><b>03</b><span data-i18n="value3">La simplicité du service</span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section loyalty-section" id="club">
+      <div class="container loyalty-grid">
+        <div class="loyalty-copy"><div class="eyebrow"><span class="eyebrow-line"></span><span data-i18n="clubEyebrow">LES HABITUÉS ONT LEUR CLUB</span></div><h2 data-i18n="clubTitle">Bienvenue dans<br><em>Msemen Club.</em></h2><p data-i18n="clubText">Scanne le QR code sur ton sachet, découvre les nouveautés et participe au vote de la prochaine recette.</p><a class="text-link" href="#qr" data-i18n="clubLink">Découvrir le QR du menu ↗</a></div>
+        <div class="loyalty-card"><div class="loyalty-card-top"><span>L'MSMEEN</span><span class="loyalty-spark">✳</span></div><small data-i18n="passportLabel">PASSEPORT MSEMEN</small><div class="stamps"><span>✳</span><span>✳</span><span>✳</span><span>✳</span><span class="stamp-empty">＋</span></div><div class="loyalty-card-bottom"><b data-i18n="collectStamps">COLLECTE TES MOMENTS</b><span>01 — 05</span></div></div>
+      </div>
+    </section>
+
+    <section class="section qr-section" id="qr">
+      <div class="container qr-panel">
+        <div class="qr-copy"><div class="eyebrow eyebrow-light"><span class="eyebrow-line"></span><span data-i18n="qrEyebrow">TOUJOURS À PORTÉE DE MAIN</span></div><h2 data-i18n="qrTitle">Scanne. Découvre.<br><em>Choisis ton msemen.</em></h2><p data-i18n="qrText">Ce QR code s'adapte automatiquement à l'adresse publique du site une fois celui-ci publié.</p><div class="qr-url-row"><span id="qrUrlText">Adresse du site après publication</span><button id="copySiteLink" type="button" aria-label="Copy website link">⧉</button></div><small class="qr-warning" id="qrStatus" data-i18n="qrStatus">La version locale génère un QR de test. Après publication sur GitHub Pages, il pointera vers le vrai site.</small></div>
+        <div class="qr-code-card"><div class="qr-code-frame"><div id="qrCode" aria-label="QR code for this website"></div></div><div class="qr-code-label"><b>L'MSMEEN</b><span data-i18n="qrScanLabel">SCANNE POUR OUVRIR LE MENU</span></div><button class="button button-yellow qr-download" id="downloadQr" type="button"><span data-i18n="downloadQr">Télécharger le QR code</span><span>↓</span></button></div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container contact-inner"><div><div class="eyebrow"><span class="eyebrow-line"></span><span data-i18n="contactEyebrow">ON RESTE EN CONTACT</span></div><h2 data-i18n="contactTitle">Une idée de recette ?<br><em>On t'écoute.</em></h2><p data-i18n="contactText">Propose une nouvelle garniture ou suggère un prochain arrêt.</p></div><div class="contact-actions"><button class="button button-primary" id="suggestRecipe"><span data-i18n="suggestRecipe">Proposer une recette</span><span>✳</span></button><a class="button button-outline" href="#schedule"><span data-i18n="seeSchedule">Voir le planning</span><span>↗</span></a><small data-i18n="contactNote">Coordonnées et réseaux sociaux à ajouter avant le lancement réel.</small></div></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-main"><a class="brand brand-footer" href="#top"><span class="brand-mark">M</span><span class="brand-copy"><strong>L'MSMEEN</strong><small>MOROCCAN STREET FOOD</small></span></a><p data-i18n="footerTagline">Une tradition marocaine. Une nouvelle expérience.</p><div class="footer-links"><a href="#menu" data-i18n="navMenu">Menu</a><a href="#schedule" data-i18n="navTruck">Où est le truck ?</a><a href="#qr">QR Menu</a></div></div>
+    <div class="container footer-bottom"><span>© <span id="yearNow"></span> L'MSMEEN · <span data-i18n="rights">Tous droits réservés.</span></span><span data-i18n="demoFooter">Prototype étudiant — démonstration non commerciale</span></div>
+  </footer>
+
+  <div class="cart-overlay" id="cartOverlay" hidden></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart" aria-hidden="true">
+    <div class="drawer-head"><div><small data-i18n="yourSelection">TA SÉLECTION</small><h3 data-i18n="cart">Panier</h3></div><button class="icon-button" id="closeCart" aria-label="Close cart">×</button></div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-empty" id="cartEmpty"><span>🥞</span><b data-i18n="emptyCart">Ton panier est encore vide.</b><p data-i18n="emptyCartText">Choisis un msemen pour commencer.</p><a href="#menu" class="button button-outline" id="backToMenu" data-i18n="browseMenu">Voir le menu</a></div>
+    <div class="cart-summary" id="cartSummary" hidden><div><span data-i18n="subtotal">Sous-total</span><b id="cartSubtotal">0 DH</b></div><small data-i18n="deliveryNote">Retrait au food truck · pas de livraison configurée.</small><button class="button button-primary checkout-button" id="checkoutButton"><span data-i18n="continueOrder">Continuer</span><span>→</span></button></div>
+  </aside>
+
+  <div class="modal-backdrop" id="checkoutModal" hidden>
+    <div class="modal-card checkout-modal" role="dialog" aria-modal="true" aria-labelledby="checkoutTitle">
+      <button class="icon-button modal-close" data-close-modal="checkoutModal" aria-label="Close">×</button>
+      <div class="eyebrow"><span class="eyebrow-line"></span><span data-i18n="checkoutEyebrow">DERNIÈRE ÉTAPE</span></div>
+      <h2 id="checkoutTitle" data-i18n="checkoutTitle">Prépare ton retrait.</h2>
+      <p data-i18n="checkoutText">Renseigne tes informations pour créer une commande de démonstration.</p>
+      <form id="checkoutForm" class="checkout-form">
+        <label><span data-i18n="nameLabel">Ton prénom</span><input name="customerName" required maxlength="60" placeholder="Ex. Yassine"></label>
+        <label><span data-i18n="phoneLabel">Téléphone</span><input name="phone" required inputmode="tel" pattern="[0-9+() .-]{8,20}" placeholder="06 00 00 00 00"></label>
+        <label><span data-i18n="pickupLabel">Créneau de retrait</span><select name="pickup" required><option value="10:30–10:45">10:30–10:45</option><option value="10:45–11:00">10:45–11:00</option><option value="11:00–11:15">11:00–11:15</option><option value="11:15–11:30">11:15–11:30</option></select></label>
+        <div class="checkout-total"><span data-i18n="orderTotal">Total estimé</span><b id="checkoutTotal">0 DH</b></div>
+        <button class="button button-primary button-full" type="submit"><span data-i18n="confirmDemo">Créer la commande de démonstration</span><span>↗</span></button>
+      </form>
+      <small class="demo-legal" data-i18n="checkoutDisclaimer">Aucune commande réelle ne sera transmise. Les données restent dans ce navigateur.</small>
+    </div>
+  </div>
+
+  <div class="modal-backdrop" id="resultModal" hidden>
+    <div class="modal-card result-modal" role="dialog" aria-modal="true" aria-labelledby="resultTitle">
+      <button class="icon-button modal-close" data-close-modal="resultModal" aria-label="Close">×</button>
+      <div class="success-mark">✓</div><div class="eyebrow centered"><span class="eyebrow-line"></span><span data-i18n="demoConfirmed">DÉMO CRÉÉE</span><span class="eyebrow-line"></span></div>
+      <h2 id="resultTitle" data-i18n="resultTitle">Ta commande est prête… en démo !</h2><p data-i18n="resultText">Voici le récapitulatif local. Aucun restaurant ne reçoit cette commande.</p>
+      <div class="receipt-box" id="receiptDetails"></div>
+      <button class="button button-primary button-full" id="finishOrder" data-i18n="closeReceipt">Terminer</button>
+    </div>
+  </div>
+
+  <div class="modal-backdrop" id="suggestModal" hidden>
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="suggestTitle">
+      <button class="icon-button modal-close" data-close-modal="suggestModal" aria-label="Close">×</button>
+      <div class="eyebrow"><span class="eyebrow-line"></span><span data-i18n="suggestEyebrow">À VOUS DE JOUER</span></div>
+      <h2 id="suggestTitle" data-i18n="suggestTitle">Imagine la prochaine recette.</h2>
+      <form id="suggestForm" class="checkout-form"><label><span data-i18n="recipeName">Nom de ta recette</span><input name="recipe" required maxlength="80" placeholder="Ex. Msemen taco"></label><label><span data-i18n="recipeIdea">Décris ton idée</span><textarea name="idea" rows="3" maxlength="300" placeholder="Les ingrédients, la garniture..."></textarea></label><button class="button button-primary button-full" type="submit" data-i18n="saveIdea">Enregistrer l'idée sur cet appareil</button></form>
+      <small class="demo-legal" data-i18n="suggestDisclaimer">Suggestion enregistrée localement pour la démonstration.</small>
+    </div>
+  </div>
+
+  <div class="modal-backdrop" id="adminModal" hidden>
+    <div class="modal-card admin-modal" role="dialog" aria-modal="true" aria-labelledby="adminTitle">
+      <button class="icon-button modal-close" data-close-modal="adminModal" aria-label="Close">×</button>
+      <div class="eyebrow"><span class="eyebrow-line"></span><span data-i18n="adminEyebrow">OUTIL DE DÉMONSTRATION</span></div>
+      <h2 id="adminTitle" data-i18n="adminTitle">Planning du food truck</h2>
+      <p data-i18n="adminText">Modifie les exemples affichés sur ce navigateur. Pour une vraie équipe, il faudra connecter une base de données et protéger l'accès administrateur.</p>
+      <form id="adminForm" class="checkout-form"><label><span data-i18n="truckLocation">Prochain emplacement</span><input name="location" id="adminLocation" maxlength="80" required></label><label><span data-i18n="truckDay">Jour</span><select name="day" id="adminDay"><option value="Lundi">Lundi</option><option value="Mardi">Mardi</option><option value="Mercredi">Mercredi</option><option value="Jeudi">Jeudi</option><option value="Vendredi">Vendredi</option><option value="Samedi">Samedi</option></select></label><label><span data-i18n="truckHours">Horaires</span><input name="hours" id="adminHours" placeholder="10:00–14:00" required></label><button class="button button-primary button-full" type="submit" data-i18n="saveSchedule">Enregistrer le planning local</button></form>
+      <small class="demo-legal" data-i18n="adminDisclaimer">Ces modifications restent sur cet appareil. Elles ne mettent pas à jour le site public pour les autres visiteurs.</small>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <button class="admin-shortcut" id="openAdmin" type="button" title="Demo admin">⚙ <span data-i18n="adminMode">Mode démo</span></button>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" defer></script>
+  <script src="app.js" defer></script>
+</body>
+</html>
